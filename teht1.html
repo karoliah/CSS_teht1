@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1{
+            margin:20px;
+            font-size: 45px;
+            font-family: 'Concert one', cursive;
+        }
+
+        li{
+            margin: 20px;
+            font-family: 'Gotu', sans-serif;
+            color: dimgrey;
+        }
+
+        p{
+            color: black;
+            font-family: 'Gotu', sans-serif;
+            padding: 10px;
+        }
+
+        img{
+            box-shadow: 0 5px lightgrey;
+        }
+
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        .left {
+            background-color: white;
+        }
+
+        .right {
+            right: 0;
+            background-color: lightgrey;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .teksti{
+            padding: 15%;
+            margin: auto;
+        }
+
+        .kuva{
+            box-sizing: border-box;
+            margin: 150px 330px;
+
+        }
+
+        .button:hover {background-color: lightblue}
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Gotu', sans-serif;
+            text-decoration: none;
+            outline: none;
+            color: white;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px #999;
+        }
+
+        .puppies{
+            position:absolute;
+            bottom: 30px;
+            left: 43%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="split left">
+        <div class="kuva">
+            <img src="dog.jpg" height="424" width="242"/>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="teksti">
+            <h1>MEDIA SHARING APP</h1>
+            <p> </p>
+            <ol class="centered">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li>
+                    <form>
+                        <label for="fname">Dogs name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </form>
+                </li>
+                <li>
+                    <button class="button">
+                        Click me
+                    </button>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <p class="puppies">
+        See more puppies for sale
+    </p>
+
+
+
+</body>
+</html>
